@@ -1,0 +1,53 @@
+#header {
+	padding: 20px 20px 20px 20px;
+	margin: 0 300px 0 300px;
+	border-left:10px solid red;
+	border-right:10px solid red;
+	border-top:10px solid black;
+	border-bottom:10px solid black;
+	text-align: center;
+}
+
+#body {
+	margin: 0 300px 0 300px;
+	padding: 0 100px 10px 100px;
+	border-left:10px solid black;
+	border-right:10px solid black;
+	border-top:10px solid red;
+	border-bottom:10px solid red;
+	
+}
+
+#rules {
+	text-align: center;
+}
+
+#ruleslist{
+	margin: 0 100px 0 80px;
+}
+
+
+#input {
+	margin: 0 160px 0 160px;
+	display: block;
+	padding-bottom: 10px;
+}
+
+#help {
+	margin: 0 100px 0 100px;
+	padding-left: 40px;
+}
+
+
+#footer {
+	margin: 0 300px 0 300px;
+	text-align: center;
+	border-left:10px solid red;
+	border-right:10px solid red;
+	border-top:10px solid black;
+	border-bottom:10px solid black;
+	padding-top: 10px;
+}
+
+
+
