@@ -121,7 +121,7 @@ $(document).ready(function(){
 		playersGuessSubmission()
 
 		event.preventDefault();
-		alert(winningNumber);
+		//alert(winningNumber);
 
 
 		$('.feedback').html(guessMessage());
