@@ -5,6 +5,8 @@
 		<title>Guessing Game</title>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+
 	</head>
 
 	<body>
@@ -19,8 +21,8 @@
 			<div id="ruleslist">
 				<ol>
 					<li>Enter a number</li>
-					<li>You will be told if you are <span style="color: #ff0000">hot</span> or <span style="color: #0000ff">cold</span></li>
-					<li>Keep going until you get it right</li>
+					<li>You will be told whether you are lower or higher than the winning number</li>
+					<li>You get 5 guesses to win </li>
 					<li>If you get it right, well then you <span style="font-size: large"><strong>WIN</strong></span></li>
 				</ol>
 			</div>
@@ -29,19 +31,37 @@
 				<form>
 					<label for="number-entry"> Enter Number</label>
 					<input type="text" id="number-entry">
-					<input type="submit" value="GUESS">
+					<button id="guessbutton">GUESS</button>
 				</form>
+				<div class="reply">
+					
+				</div>
+				<div class="feedback">
+					
+				</div>
+				<div class="yourguesses">
+					<p>YOUR GUESSES:</p>
+					<div class="guesslist">
+						
+					</div>
+				</div>
 			</div>
 			<div id="help">
 				<form>
-					<input type="submit" value="NEED HELP?">
-					<input type="submit" value="GIVE UP?">
+					<button id="hinter">NEED HELP?</button>
+					<button id="playagain">PLAY AGAIN</button>
 				</form>
+				<div class="hintarea">
+					
+				</div>
 			</div>
 		</section>
 		<section id="footer">
 			<p>Created by Kelvin Masilamani: Student at Fullstack Academy</p>
 		</section>
+
+		<script src="jquery.js"></script>
+		<script src="guessingGame.js" ></script>
 	</body>
 
 
