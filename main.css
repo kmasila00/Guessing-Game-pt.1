@@ -1,6 +1,6 @@
 #header {
 	padding: 20px 20px 20px 20px;
-	margin: 0 300px 0 300px;
+	margin: 0 auto 0 auto;
 	border-left:10px solid red;
 	border-right:10px solid red;
 	border-top:10px solid black;
@@ -9,7 +9,8 @@
 }
 
 #body {
-	margin: 0 300px 0 300px;
+	text-align: center;
+	margin: 0 auto 0 auto;
 	padding: 0 100px 10px 100px;
 	border-left:10px solid black;
 	border-right:10px solid black;
@@ -40,7 +41,7 @@
 
 
 #footer {
-	margin: 0 300px 0 300px;
+	margin: 0 auto 0 auto;
 	text-align: center;
 	border-left:10px solid red;
 	border-right:10px solid red;
@@ -53,5 +54,27 @@
 	display: none;
 }
 
+.RandF {
+	border: 2px;
+	border-style: double;
+	display: none;
+	margin-top: 5px;
+	padding: 5px 0 5px 0;
+}
+
+.yourguesses {
+	padding: 5px 0 5px 0;
+	margin-top: 5px;
+	border:2px;
+	border-style: dotted;
+}
+
+#pics {
+	display: none;
+}
+
+#pics2 {
+	display: none;
+}
 
 

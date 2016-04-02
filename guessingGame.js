@@ -70,7 +70,10 @@ function checkGuess(){
 	numGuesses++;
 
 	if(winningNumber === playersGuess){
-		return "YOU WIN!";
+		guesses.push(playersGuess);
+		$('#pics2').show();
+		$('.reply').html("");
+		$('.RandF').css('border', 'none');
 	} else if(numGuesses < 5) {
 		if(guesses.length !== 0){
 			for(var i = 0; i < guesses.length; i++){
@@ -87,7 +90,8 @@ function checkGuess(){
 
 	} else {
 		guesses.push(playersGuess);
-		return "YOU LOSE!"
+		$('#pics').show();
+		$('.reply').html("");
 	}
 }
 
@@ -96,12 +100,12 @@ function checkGuess(){
 function provideHint(){
 	// add code here
 
-	if((winningNumber+10) >= 100){
+	if((winningNumber+5) >= 100){
 		return "The number is between 90 and 100";
-	} else if ((winningNumber-10) <= 0){
+	} else if ((winningNumber-5) <= 0){
 		return "The number is between 0 and 10";
 	} else {
-		return "The number is between " + (winningNumber-10) + " and " + (winningNumber+10);
+		return "The number is between " + (winningNumber-5) + " and " + (winningNumber+5);
 	}
 
 }
@@ -126,6 +130,7 @@ $(document).ready(function(){
 
 		$('.feedback').html(guessMessage());
 		$('.reply').html(checkGuess());
+		$('.RandF').show();
 		$('.yourguesses').show();
 		$('.guesslist').html(guesses.join(", "));
 		
@@ -141,9 +146,12 @@ $(document).ready(function(){
 
 	$('#playagain').click(function(){
 
-		event.preventDefault();
+		//event.preventDefault();
 		winningNumber = generateWinningNumber();
-		$('.reply').html("");
+		$('#pics').css('display', 'none');
+		$('#pics2').css('display', 'none');
+		$('.RandF').html("");
+		guesses = [];
 
 	});
 
